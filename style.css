@@ -1,0 +1,111 @@
+
+#header{
+    background-color: yellowgreen;
+    width: 100%;
+    padding: 5px;
+    overflow: hidden; 
+    margin: 0%;
+}
+#logo{
+    width: 4%;
+    float: left;
+}
+.header-item{
+    float: left;
+    width: 33%;
+}
+.header-item, h2 {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+ 
+}
+.header-item input{
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 22px;
+    margin: 14px 30px;
+}
+.wrapper{
+    width:85%;
+    margin: auto;
+    overflow: hidden;
+    background-color: rgb(226, 222, 222);  
+}
+#aside{
+    float: left;
+    width: 20%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(226, 222, 222);
+}
+form{
+    padding: 5px;
+    font-size: large;
+    color: black;
+}
+input {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    width: 100%;
+    cursor: pointer;
+}
+textarea{
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+    width: 100%;
+    cursor: pointer;
+}
+#btnSave{
+    font-weight: bold;
+    width:90%;
+    color: black;
+    background-color: yellowgreen;
+    padding: 10px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+#main{
+    width: 70%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    float: left;
+    background-color: white;
+    background-color: rgb(226, 222, 222);    
+} 
+#main img {
+    width: 250px;
+    height: 360px;
+    margin-left: 225px;
+}
+ul {
+    list-style-type: none;
+    margin: 10px;
+}
+li {
+    border-top: 1px solid rgb(197, 197, 197);
+    padding: 15px;
+    overflow: hidden;  
+}
+li:hover{
+    background-color: rgb(214, 213, 213) ;
+}
+.delBtn{
+  float: right;
+  padding: 5px;
+  background: rgb(255, 254, 254);
+  width: auto;
+  text-align: center;
+  color: rgb(221, 17, 58);
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-right: 5px;
+} 
+.delBtn:hover{
+    background-color:rgb(194, 12, 49);
+    color: white;
+    font-weight: bold;
+}

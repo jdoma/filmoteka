@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <title>Document</title>
+</head>
+<body ng-app="filmModul">
+    <div ng-controller="kontroler">
+
+        <div id="header">
+            <img src="movie-camera.png" id="logo">
+            <h2 class="header-item">Filmoteka</h2>
+            <div class="header-item">
+                <input type="text" ng-model="search" placeholder="Search movies..."></input>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div id="aside">
+                <form ng-submit="saveMovie()">
+                    <h3>New Movie:</h3>
+                    <input type="text" ng-model="newMovie.title" placeholder="Movie title">
+                    <br>
+                    <input type="text" ng-model="newMovie.movieImg" placeholder="Image " class="movieImg">
+                    <br>
+                    <input type="text" ng-model="newMovie.actor" placeholder="Main actor">
+                    <br>
+                    <textarea ng-model="newMovie.desc" cols="20" rows="5" placeholder="Description..."></textarea>
+                    <input type="submit" id="btnSave" value="SAVE">
+                </form>
+
+            </div>
+            <div id="main">
+                <ul>
+                    <li ng-repeat="t in movies | filter:search">
+                        <h2>{{t.title}}</h2>
+                        <img ng-src="{{t.movieImg}}">
+                        <h3>{{t.actor}}</h3>
+                        <p>{{t.desc}}</p>
+                        <button class="delBtn" ng-click="removeMovie(movie)">delete</button>
+                    </li>
+
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
